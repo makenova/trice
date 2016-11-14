@@ -5,7 +5,7 @@
 **This is just a placeholder, it's still a work in progress. Right now it only
 returns exactly the format that I need in my use case**
 
-[![Build Status](https://travis-ci.org/makenova/ordinal-numbers.svg?branch=master)](https://travis-ci.org/makenova/ordinal-numbers)
+[![Build Status](https://travis-ci.org/makenova/trice.svg?branch=master)](https://travis-ci.org/makenova/trice)
 
 Small date and time format helper, for when [momentjs](http://momentjs.com/)
 too much.
