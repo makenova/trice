@@ -1,5 +1,5 @@
-let oclock = require('o-clock')
-let ordinal = require('ordinal-numbers')
+var oclock = require('o-clock')
+var ordinal = require('ordinal-numbers')
 
 class Occasion {
   constructor(date) {
