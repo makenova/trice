@@ -25,7 +25,7 @@
     "ava": "^0.16.0"
   },
   "dependencies": {
-    "o-clock": "^0.1.0",
+    "o-clock": "^0.1.2",
     "ordinal-numbers": "^1.0.1"
   }
 }
