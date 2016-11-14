@@ -1,0 +1,31 @@
+{
+  "name": "trice",
+  "version": "0.0.1",
+  "description": "Small date and time format helper, for when momentjs too much.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "moment",
+    "time",
+    "date"
+  ],
+  "author": "makenova",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makenova/trice"
+  },
+  "bugs": "https://github.com/makenova/trice/issues",
+  "engines": {
+    "node": ">=4.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0"
+  },
+  "dependencies": {
+    "o-clock": "^0.1.0",
+    "ordinal-numbers": "^1.0.1"
+  }
+}
