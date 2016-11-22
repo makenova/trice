@@ -47,7 +47,7 @@ function Occasion(date) {
   }
 
   this.getDate = function getDate() {
-    return `${this.day}, ${this.month} ${this.monthDate} ${this.year}`
+    return this.day + ', ' + this.month + ' ' + this.monthDate + ' ' + this.year
   }
 
   this.getTime = function getTime() {
