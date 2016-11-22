@@ -22,41 +22,39 @@ function parseTime(object, date) {
   object.meridiem = oclockString.split(' ')[1]
 }
 
-class Occasion {
-  constructor(date) {
-    this.date = date || new Date()
-    this.formatKey = {
-      'Y': 'year',
-      'M': 'month',
-      'D': 'monthDate',
-      'd': 'day',
-      'h': 'hour',
-      'm': 'minutes',
-      's': 'seconds',
-      'p': 'meridiem',
-    }
-
-    parseDate(this, this.date)
-    parseTime(this, this.date)
+function Occasion(date) {
+  this.date = date || new Date()
+  this.formatKey = {
+    'Y': 'year',
+    'M': 'month',
+    'D': 'monthDate',
+    'd': 'day',
+    'h': 'hour',
+    'm': 'minutes',
+    's': 'seconds',
+    'p': 'meridiem',
   }
 
-  valueOf() {
+  parseDate(this, this.date)
+  parseTime(this, this.date)
+
+  this.valueOf = function valueOf() {
     return this.date.toString()
   }
 
-  toString() {
+  this.toString = function toString() {
     return this.date.toString()
   }
 
-  getDate() {
+  this.getDate = function getDate() {
     return `${this.day}, ${this.month} ${this.monthDate} ${this.year}`
   }
 
-  getTime() {
+  this.getTime = function getTime() {
     return oclock(this.date)
   }
 
-  format(formatString){
+  this.format = function format(formatString){
     if(!formatString) return  this.date.toString()
 
     return formatString
