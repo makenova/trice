@@ -59,7 +59,7 @@ function Occasion(date) {
 
     return formatString
       .split('')
-      .map(function (value) { this[this.formatKey[value]] || value })
+      .map(function (value) { return this[this.formatKey[value]] || value }.bind(this))
       .join('')
   }
 }
