@@ -1,10 +1,10 @@
 'use strict';
 
-let oclock = require('o-clock')
-let ordinal = require('ordinal-numbers')
+var oclock = require('o-clock')
+var ordinal = require('ordinal-numbers')
 
 function parseDate(object, date) {
-  let dateString = date.toDateString()
+  var dateString = date.toDateString()
 
   object.day = dateString.split(' ')[0]
   object.month = dateString.split(' ')[1]
@@ -13,8 +13,8 @@ function parseDate(object, date) {
 }
 
 function parseTime(object, date) {
-  let timeString = date.toTimeString().split(' ')[0]
-  let oclockString = oclock(date)
+  var timeString = date.toTimeString().split(' ')[0]
+  var oclockString = oclock(date)
 
   object.hour = oclockString.split(':')[0]
   object.minutes = timeString.split(':')[1]
