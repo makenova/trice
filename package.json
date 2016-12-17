@@ -1,6 +1,6 @@
 {
   "name": "trice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small date and time format helper, for when momentjs too much.",
   "main": "index.js",
   "scripts": {
